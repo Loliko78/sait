@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template
+from threading import Thread
 import g4f
 from g4f.Provider import (
     Bing,
@@ -41,4 +42,4 @@ def index():
     else:
         return render_template('index.html')
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(host='0.0.0.0', port=80)
