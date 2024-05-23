@@ -1,4 +1,4 @@
-$ cat my_flask_app/Dockerfile
+
 FROM ubuntu:latest
 MAINTAINER Andrey Maksimov 'maksimov.andrei@gmail.com'
 RUN apt-get update -y
