@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <style type="text/css">
+        #centerLayer {
+            padding: 20px 30px;
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .button {
+  display: inline-block;
+  background: #2196f3;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Tahoma;
+  line-height: 1;
+}
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <div id="centerLayer">
+        <h3 for="user_input">Ваше сообщение: </h3>
+        <input type="text" id="user_input" name="user_input" >
+        <input class="button" type="submit" value="Отправить">
+    </div>
+    </form>
+    {% if admin_input %}
+        <h3 id="centerLayer">Sasha: {{ admin_input }}</h3>
+    {% endif %}
+</body>
+</html>
